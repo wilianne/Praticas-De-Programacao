@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <script>
+        function Sum(){
+            //data input
+            const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+            const sum = document.getElementById('sum');
+            
+            //processing
+            const total_sum = n1 + n2;
+
+            result.innerHTML = "The result is: "+total_sum;
+            
+            //data output
+            console.log("The result is: "+total_sum);
+        }
+        function Subtraction(){
+            //data input
+            const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+            const sub = document.getElementById('subtraction');
+            
+            //processing
+            const total_sub = n1 - n2;
+
+            result.innerHTML = "The result is: "+total_sub;
+            
+            //data output
+            console.log("The result is: "+total_sub);
+        }
+        function Multiply(){
+            //data input
+            const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+            const sum = document.getElementById('multiply');
+            
+            //processing
+            const total_mult = n1 * n2;
+
+            result.innerHTML = "The result is: "+total_mult;
+            
+            //data output
+            console.log("The result is: "+total_mult);
+        }
+        function Division(){
+            //data input
+            const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+            const sum = document.getElementById('division');
+            
+            //processing
+            const total_div = n1 / n2;
+
+            result.innerHTML = "The result is: "+total_div;
+            
+            //data output
+            console.log("The result is: "+total_div);
+        }
+       
+       
+    </script>
+</head>
+<body>
+    <form action="">
+        N1: <input type="text" id="n1"/><br>
+        N2: <input type="text" id="n2"/><br>
+        <input type="button"value="sum" onclick="Sum()">
+        <input type="button"value="subtraction" onclick="Subtraction()">
+        <input type="button"value="multiply" onclick="Multiply()">
+        <input type="button"value="division" onclick="Division()">
+        <h1 id="result">The result is: </h1>
+    </form>
+    
+</body>
+</html>
