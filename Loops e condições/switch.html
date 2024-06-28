@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+
+    <script>
+        const office = prompt("Enter your job title: ");
+        const salary = Number(prompt("Enter your salary"));
+        let increase = 0;
+        /*
+        Check the salary increase according to the following positions:
+        Trainee: 100%
+        Analyst: 50%
+        Manager: 30%
+        President: 10%
+        */
+       switch(office){
+            case 'Trainee': increase = salary * 1;break;
+            case 'Analyst': increase = salary * 0.5;break;  
+            case 'Manager':increase = salary * 0.3;break;
+            case 'President':increase = salary * 0.1;break;
+            default: alert("Please choose a valid position!!");
+
+        
+        }
+        
+        const newSalary = increase + salary;
+        console.log("His salary with the increase was: "+ newSalary);   
+
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating structures</title>
+
+    <script>
+        
+        const quantity = Number(prompt("How many notes: "));
+        let sum = 0;
+        let note = 0;
+        for(let i = 1; i <= quantity; i++){
+            note = Number(prompt("Enter note "+i));
+            sum += note;
+            
+        }
+        const median = sum/quantity;
+
+        median >= 7?console.log("Approved!"):console.log("Disapproved!");
+            
+        console.log("The final average is: "+median);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

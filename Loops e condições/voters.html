@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election</title>
+    <script>
+        const yearOfBirth = Number(prompt("Enter your year of birth: "));
+        const electionYear = Number(prompt("Enter election year: " ));
+
+        const age = electionYear - yearOfBirth;
+
+        if (age < 16)
+        {
+            console.log("You are not of minimum age to vote. Age: "+age);
+        }
+        else if(age >=18 && age < 70 )
+        {   
+            console.log("You are required to vote. Age: "+age);
+        }   
+        else
+        {
+            console.log("You can vote or not, it is optional. Age: "+age);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
