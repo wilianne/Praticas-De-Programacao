@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        const notes = [];
+        const quantity = Number(prompt("Enter the amount of notes"));
+        for(let i = 1; i<= quantity;i++){
+            let note = Number(prompt("enter note "+i));
+            notes.push(note);
+        }
+
+        console.table(notes);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

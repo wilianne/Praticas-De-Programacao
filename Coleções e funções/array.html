@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+
+        const cars = ['Gol','Fusca','Virtus','Ka'];
+
+        cars.push('Fiesta');
+        cars.unshift('Palio');
+        console.table(cars);
+
+        cars.splice(1,0,'Uno');
+        console.table(cars);
+        
+        cars.sort();//ordenar 
+        console.table(cars);
+
+        /*
+        //add end
+        cars.push('Fiesta');
+        console.table(cars);
+        
+
+        //add initial
+        cars.unshift('Palio');
+        console.table(cars);
+
+        //remove end
+        cars.pop();
+        console.table(cars);
+        
+        //remove initial
+        cars.shift();//ele tira mas retorna para uma variavel
+        console.table(cars);
+
+        //mid array - remove e add
+        cars.splice(1,2)//excluir
+        console.table(cars);
+
+        cars.splice(1,0,'uno')//adiciona em um indice
+        console.table(cars);
+
+        cars.splice(1,1,'Gol');//altera um valor
+        console.table(cars);
+
+        
+        splice serve para:
+
+        Excluir itens a partir de uma posição
+        ex: cars.splice(2,3) -> exclui 3 itens a partir da posição 2
+
+        Insere itens a partir de uma posição
+        ex: cars.splice(3,0,'Uno') -> adiciona o item 'Uno' na posição 3
+
+        Alterar itens a partir de uma posição
+        ex: cars.splice(1,1,'Uno') -> adiciona o item 'Uno' na posição 1 apos apagar o item que la estava
+        */
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
