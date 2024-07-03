@@ -1,58 +1,49 @@
-function Calculate(){
-    const n1 = Number(document.getElementById('n1').value);
-    const n2 = Number(document.getElementById('n2').value);
+function Calculate(operation){
+    const n1 = (document.getElementById('n1').value);
+    const n2 = (document.getElementById('n2').value);
+    let total_result = 0;
+    switch(operation){
+        case "+":
+            total_result = Sum(n1,n2);
+            break
+        case "-":
+            total_result = Sub(n1,n2);
+            break
+
+        case "*":
+            total_result = Mult(n1,n2);
+            break
+        case "/":
+            total_result = Div(n1,n2);
+            break
+
+    }
+    result.innerHTML = "The result is: "+total_result;
 }
-function Sum(){
-    //data input
-    
-    
-    //processing
-    const total_sum = n1 + n2;
+function Sum(n1,n2){
 
-    //data output
-    
-    result.innerHTML = "The result is: "+total_sum;
-    console.log('The result is: '+total_sum);
-
-
-}
-function Sub(){
-    //data input 
-    
-
-    //processing
-    const total_sub = n1 - n2;
-
-    //data output
-    result.innerHTML = "The result is: "+total_sub;
-    console.log('The result is: '+total_sub);
+    return Number(n1) + Number(n2);
 
 }
-function Mult(){
-    //data input
-    
+function Sub(n1,n2){
 
-    //processing
-    const total_mult = n1 * n2
+    return Number(n1) - Number(n2);
 
-    //data output
-    result.innerHTML = 'The result is: '+total_mult;
-    console.log('The result is: '+total_mult);
 }
-function Div(){
-    //data input
+function Mult(n1,n2){
+
+    return  Number(n1) * Number(n2);
+    
+}
+function Div(n1,n2){
     
     let total_div = 0;
-    //processing
     if (n2 === 0){
-        total_div = "dont exist";
+        return "dont exist";
     }
     else{
-        total_div = n1 / n2;
+        return Number(n1) / Number(n2);
     }
     
 
-    //data output
-    result.innerHTML = 'The result is: '+total_div;
-    console.log('The result is: '+total_div);
 }

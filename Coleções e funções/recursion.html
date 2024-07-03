@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
-    <script type="text/javascript" src="js/functionsCalc.js"></script>
+    <script>
+        function factorial(x){
+            if(x < 1){
+                return 1;
+            }
+            else{
+                return x * factorial(x-1);
+            }
+            
+        }
+        console.log(factorial(5));
+    </script>
     
 
 </head>
